@@ -1,14 +1,14 @@
 `timescale 1ns / 1ps
 
 module Regfile(
-	input clk,
-	input [31:0] d,
-	output [31:0] a,
-	output [31:0] b,
-	input [4:0] rd,
-	input [4:0] rs1,
-	input [4:0] rs2,
-	input we_d
+	input				clk,
+	input		[31:0]	d,
+	output		[31:0]	a,
+	output		[31:0]	b,
+	input		[4:0]	rd,
+	input		[4:0]	rs1,
+	input		[4:0]	rs2,
+	input				we_d
 );
 
 
