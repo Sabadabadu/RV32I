@@ -14,10 +14,10 @@ module Comp(
 	input				v,
 	input		[2:0]	funct3,
 
-	output				comp,		// result of the comparison; matters 
+	output reg     		comp,		// result of the comparison; matters 
 									// only for branches and computing 
 									// comp_out
-	output	reg	[31:0]	comp_out	// comp, extended to 32 bits with 0
+	output     	[31:0]	comp_out	// comp, extended to 32 bits with 0
 									// matters only for SLTs
     );
 
@@ -29,7 +29,7 @@ module Comp(
 	wire lt;
 	wire ge;
 
-	wire signed_comp;	// high when the comparison is signed;
+	reg  signed_comp;	// high when the comparison is signed;
 						// depends only on the instruction being executed
 
 

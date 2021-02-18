@@ -1,16 +1,16 @@
 `timescale 1ns / 1ps
 
 module Alu(
-	input	[31:0]		x,
-	input	[31:0]		y,
-	input	[2:0]		funct3,
-	input	[6:0]		funct7,
-	input				m_0_x,
-	input				m_sub_add,
-	input	[1:0]		m_out,
+	input      [31:0]  x,
+	input      [31:0]  y,
+	input      [2:0]   funct3,
+	input      [6:0]   funct7,
+	input			   m_0_x,
+	input			   m_sub_add,
+	input      [1:0]   m_out,
 
-	output	[31:0]		alu_out,
-	output		 		comp
+	output reg [31:0]  alu_out,
+	output             comp
     );
 
 
@@ -55,7 +55,7 @@ module Alu(
 	);
 	
 	// Comp
-	Comp comp(
+	Comp comparator(
 		.adder_out(adder_out),
 		.c(c),
 		.v(v),
