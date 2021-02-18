@@ -1,24 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 02/06/2021 07:43:14 PM
-// Design Name: 
-// Module Name: Decoder
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module Decoder(
 	input		[31:0]	inst,
@@ -31,6 +11,7 @@ module Decoder(
 	output		[4:0]	rd,
 	output		[6:0]	opcode
     );
+
 
 	/* VARIABLES */
 
